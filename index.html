@@ -24,14 +24,97 @@
                 <div class="col-2 align-self-center">
                     <img src="img/logo2.png" class="img-fluid">
                 </div>
-                <div class="col pt-4">
+                <div class="col align-self-center">
                     <h1>IT Consulting</h1>
                     <h2>Cloud and VDI Consulting Services</h2>
+                </div>
+                <!-- Get a Quote button -->
+                <div class="col-md-4 col-xl-2 align-self-top">
+                    <button data-toggle="modal" data-target="#getQuoteModal" role="button" class="btn btn-dark btn-lg"> Get a Quote </button>                
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Get a Quote modal -->
+    <div id="getQuoteModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h3 class="text-white"> Get a Quote </h3>
+                    <button type="button" class="close text-white" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body"> 
+                    <div class="container-fluid">
+                        <form>
+                            <!-- Basic Info -->
+                            <div class="form-group row">
+                                <label for="companyName" class="col-sm-6 col-form-label"> Company Name </label>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Company Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="projectName" class="col-sm-6 col-form-label"> Project Name </label>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="companyName" name="projectName" placeholder="Project Name" />
+                                </div>
+                            </div>
+                            <!-- Project Length -->
+                            <div class="form-group row">
+                                <label for="projectLength" class="col-sm-6 col-form-label"> Project Length </label>
+                                <div class="col-sm">
+                                    <select class="form-control" id="projectLength">
+                                        <option value="Select.."> Select... </option>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="6"> 7 </option>
+                                        <option value="6"> 8 </option>
+                                        <option value="6"> 9 </option>
+                                    </select>
+                                </div>
+                                <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="length" id="projectLength" autocomplete="off" checked> Weeks
+                                    </label>
+                                    <label class="btn btn-success">
+                                        <input type="radio" name="length" id="projectLength" autocomplete="off" checked> Months
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Date -->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label"> Start Date </label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="form-group row">
+                                <label for="description" class="col-sm-3 col-form-label"> Project Description </label>
+                                <div class="col-sm-9">
+                                    <textarea name="description" class="form-control" id="description" rows="8"> </textarea>
+                                </div>
+                            </div>
+                            <!-- Buttons -->
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="button" data-dismiss="modal" class="btn btn-secondary"> Cancel </button>
+                                    <button type="submit" class="btn btn-success"> Submit </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -47,7 +130,7 @@
     
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h2 class="text-md-right">Title 1</h2>
             </div>
             <div class="col-md">
@@ -61,8 +144,9 @@
             </div>
 
             <!-- Carousel -->
-            <div class="row row-content justify-content-end">
-                <div class="col-md-9">
+            <div class="row row-content justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <div id="carousel1" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -104,7 +188,7 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h2 class="text-md-right">Title 2</h2>
             </div>
             <div class="col">
@@ -118,8 +202,9 @@
             </div>
 
             <!-- Carousel -->
-            <div class="row row-content justify-content-end">
-                <div class="col-md-9">
+            <div class="row row-content justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <div id="carousel2" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -168,7 +253,7 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h2 class="text-md-right">Title 3</h2>
             </div>
             <div class="col">
@@ -182,8 +267,9 @@
             </div>
 
             <!-- Carousel -->
-            <div class="row row-content justify-content-end">
-                <div class="col-md-9">
+            <div class="row row-content justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <div id="carousel3" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
