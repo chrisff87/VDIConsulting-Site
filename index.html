@@ -21,7 +21,7 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-2 align-self-center">
+                <div class="col-3 col-md-2 align-self-center">
                     <img src="img/logo2.png" class="img-fluid">
                 </div>
                 <div class="col align-self-center">
@@ -29,7 +29,7 @@
                     <h2>Cloud and VDI Consulting Services</h2>
                 </div>
                 <!-- Get a Quote button -->
-                <div class="col-md-4 col-xl-2 align-self-top">
+                <div class="col-md-2 align-self-top">
                     <button data-toggle="modal" data-target="#getQuoteModal" role="button" class="btn btn-dark btn-lg"> Get a Quote </button>                
                 </div>
             </div>
@@ -40,7 +40,7 @@
     <div id="getQuoteModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header bg-dark">
+                <div class="modal-header quoteModalHeader">
                     <h3 class="text-white"> Get a Quote </h3>
                     <button type="button" class="close text-white" data-dismiss="modal"> &times; </button>
                 </div>
@@ -60,10 +60,17 @@
                                     <input type="text" class="form-control" id="companyName" name="projectName" placeholder="Project Name" />
                                 </div>
                             </div>
+                            <!-- Date -->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label"> Project Start Date </label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                            </div>
                             <!-- Project Length -->
                             <div class="form-group row">
                                 <label for="projectLength" class="col-sm-6 col-form-label"> Project Length </label>
-                                <div class="col-sm">
+                                <div class="col">
                                     <select class="form-control" id="projectLength">
                                         <option value="Select.."> Select... </option>
                                         <option value="1"> 1 </option>
@@ -78,19 +85,12 @@
                                     </select>
                                 </div>
                                 <div class="col btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary">
+                                    <label class="btn quoteButtons2">
                                         <input type="radio" name="length" id="projectLength" autocomplete="off" checked> Weeks
                                     </label>
-                                    <label class="btn btn-success">
+                                    <label class="btn quoteButtons2">
                                         <input type="radio" name="length" id="projectLength" autocomplete="off" checked> Months
                                     </label>
-                                </div>
-                            </div>
-                            <!-- Date -->
-                            <div class="form-group row">
-                                <label for="date" class="col-sm-6 col-form-label"> Start Date </label>
-                                <div class="col-sm-6">
-                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
                                 </div>
                             </div>
                             <!-- Description -->
@@ -101,10 +101,10 @@
                                 </div>
                             </div>
                             <!-- Buttons -->
-                            <div class="form-group row">
-                                <div class="col">
-                                    <button type="button" data-dismiss="modal" class="btn btn-secondary"> Cancel </button>
-                                    <button type="submit" class="btn btn-success"> Submit </button>
+                            <div class="form-group row justify-content-end">
+                                <div class="col col-lg-3">
+                                    <button type="button" data-dismiss="modal" class="btn btn-dark"> Cancel </button>
+                                    <button type="submit" class="btn quoteButtons"> Submit </button>
                                 </div>
                             </div>
                         </form>
@@ -117,10 +117,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <div class="collapse navbar-collapse" id="nucampNavbar">
+            <a class="navbar-brand" href="#"> <img src="img/logo2.png" height="30" width="30" /> </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#siteNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active"> <a class="nav-link" href="#"> <i class="fa fa-home fa-lg"> </i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> <i class="fa fa-list-alt fa-lg"> </i> Services </a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html"> <i class="fa fa-list-alt fa-lg"> </i> Services </a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"> <i class="fa fa-info-circle fa-lg"> </i> About Us </a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"> <i class="fa fa-phone-square fa-lg"> </i> Contact Us </a></li>
                 </ul>
@@ -316,7 +320,7 @@
                     <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="services.html">Services</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="contactus.html">Contact Us</a></li>
                         </ul>

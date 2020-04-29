@@ -43,7 +43,7 @@ h5 {
     min-height: 200px;
 }
 
-.navbar {
+.navbar, .quoteModalHeader {
     background-image: linear-gradient(to right, black, #BBBBBB);
 }
 
@@ -64,6 +64,15 @@ h4 {
 }
 
 .thead {
-    background-color: #9CCC00 ;
+    background-image: linear-gradient(to right,black, #9CCC00);
 }
 
+.quoteButtons {
+    background-color: #9CCC00;
+    border-color: black;
+}
+
+.quoteButtons2 {
+    background-color: #BBBBBB;
+    border-color: black;
+}
