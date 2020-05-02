@@ -15,7 +15,7 @@ h5 {
 }
 
 .site-footer {
-    background-image: linear-gradient( #4DBEFF, black);
+    background-image: linear-gradient( #9CCC00, black);
     padding: 20px 0px;
 }
 
@@ -29,7 +29,7 @@ h5 {
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right,black, #4DBEFF);
+    background-image: linear-gradient(to right,black, #9CCC00);
     margin: 0px;
 }
 
@@ -43,12 +43,8 @@ h5 {
     min-height: 200px;
 }
 
-.navbar {
+.navbar, .quoteModalHeader {
     background-image: linear-gradient(to right, black, #BBBBBB);
-}
-
-.quoteModalHeader {
-    background-image: linear-gradient(to right, black, #4DBEFF);
 }
 
 .carousel {
@@ -68,11 +64,11 @@ h4 {
 }
 
 .thead {
-    background-image: linear-gradient(to right,black, #4DBEFF);
+    background-image: linear-gradient(to right,black, #9CCC00);
 }
 
 .quoteButtons {
-    background-color: #4DBEFF;
+    background-color: #9CCC00;
     border-color: black;
 }
 
